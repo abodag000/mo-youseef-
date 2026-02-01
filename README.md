@@ -1,5 +1,4 @@
- <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+ <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -449,7 +448,7 @@
     </div>
 
     <script>
-        let db = JSON.parse(localStorage.getItem('phys_db')) || [{name: " مستر محمد يوسف", code: "PH-2008"}];
+        let db = JSON.parse(localStorage.getItem('phys_db')) || [{name: "  محمد يوسف", code: "PH-2008"}];
 
         function showModal(id) { document.getElementById('modal-'+id).style.display = 'flex'; }
         function hideModals() { document.querySelectorAll('.modal-overlay').forEach(m => m.style.display = 'none'); }
