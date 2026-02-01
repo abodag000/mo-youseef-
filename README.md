@@ -220,7 +220,7 @@
     </nav>
 
     <div id="home-page">
-        <h1 class="hero-title animate__animated animate__zoomIn">كوكب الفيزياء ⚛️</h1>
+        <h1 class="hero-title animate__animated animate__zoomIn">كوكب الفيزياء 🦅</h1>
         <p class="animate__animated animate__fadeInUp" style="font-size: 1.4rem; color:#cbd5e1; margin-bottom: 30px;">طريقك نحو الـ 60 درجة مع المستر محمد يوسف</p>
         <button class="btn-glow animate__animated animate__pulse animate__infinite" onclick="showModal('student')">
             ابدأ رحلة التفوق الآن <i class="fas fa-bolt" style="margin-right:10px"></i>
@@ -484,7 +484,7 @@
         }
 
         function loginTeacher() {
-            if(document.getElementById('t-user').value === "Joo" && document.getElementById('t-pass').value === "joo203040") {
+            if(document.getElementById('t-user').value === "Joo" && document.getElementById('t-pass').value === "joo") {
                 document.getElementById('home-page').style.display = 'none';
                 document.getElementById('dashboard').style.display = 'block';
                 hideModals(); renderCodes();
