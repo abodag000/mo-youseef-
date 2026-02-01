@@ -258,7 +258,7 @@
                     <ul style="list-style: none; padding: 0;">
                         <li><span class="unit-badge">I</span> شدة التيار - تقاس بالأمبير (A)</li>
                         <li><span class="unit-badge">V</span> فرق الجهد - يقاس بالفولت (V)</li>
-                        <li><span class="unit-badge">R</span> المقاومة - تقاس بالأوم ($\Omega$)</li>
+                        <li><span class="unit-badge">R</span> المقاومة - تقاس بالأوم (Ω )</li>
                     </ul>
                 </div>
             </div>
@@ -274,7 +274,7 @@
                             <h4 style="color: var(--primary)">🟢 التوصيل على التوالي</h4>
                             <ul>
                                 <li>الغرض: الحصول على مقاومة كبيرة.</li>
-                                <li>التيار ($I$) ثابت في جميع المقاومات.</li>
+                                <li>التيار (I) ثابت في جميع المقاومات.</li>
                                 <li>الجهد يتجزأ بنسب طردية مع المقاومات.</li>
                             </ul>
                             <div class="law-box" style="font-size: 1.1rem;">$$R_{eq} = R_1 + R_2 + R_3...$$</div>
@@ -283,7 +283,7 @@
                             <h4 style="color: var(--primary)">🟡 التوصيل على التوازي</h4>
                             <ul>
                                 <li>الغرض: الحصول على مقاومة صغيرة جداً.</li>
-                                <li>فرق الجهد ($V$) ثابت.</li>
+                                <li>فرق الجهد (V) ثابت.</li>
                                 <li>التيار يتجزأ بنسب عكسية.</li>
                             </ul>
                             <div class="law-box" style="font-size: 1.1rem;">$$\frac{1}{R_{eq}} = \frac{1}{R_1} + \frac{1}{R_2}...$$</div>
@@ -335,7 +335,7 @@
                 <div id="l2-3" class="lesson-content">
                     <p>القوة التي يؤثر بها مجال مغناطيسي على سلك يمر به تيار:</p>
                     <div class="law-box">$$F = B \cdot I \cdot L \cdot \sin(\theta)$$</div>
-                    <p>أما عزم الازدواج ($\tau$) فهو أساس عمل الموتور والجلفانومتر:</p>
+                    <p>أما عزم الازدواج فهو أساس عمل الموتور والجلفانومتر:</p>
                     <div class="law-box">$$\tau = B \cdot I \cdot A \cdot N \cdot \sin(\theta)$$</div>
                 </div>
             </div>
@@ -412,12 +412,179 @@
 
     </div>
 </div>
+<div class="chapter-card animate__animated animate__fadeIn">
+    <h2 style="color:var(--accent); border-bottom: 2px solid; display:inline-block; padding-bottom:10px;">
+        <i class="fas fa-sync-alt"></i> الفصل الثالث: الحث الكهرومغناطيسي
+    </h2>
+
+    <div class="lesson-card">
+        <div class="lesson-header" onclick="toggleLesson('l3-1')">
+            <span>1. قانون فارادي ولينز</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="l3-1" class="lesson-content">
+            <p>يتولد تيار مستحث وقوة دافعة كهربائية مستحثة نتيجة قطع خطوط الفيض المغناطيسي.</p>
+            
+            <div class="law-box">
+                $$emf = -N \frac{\Delta \phi_m}{\Delta t}$$
+            </div>
+            <div class="note-box">
+                <strong>قاعدة لينز:</strong> التيار المستحث يعاكس التغير المسبب له (التعليل الفيزيائي للاشارة السالبة).
+            </div>
+        </div>
+    </div>
+
+    <div class="lesson-card">
+        <div class="lesson-header" onclick="toggleLesson('l3-2')">
+            <span>2. emf المستحثة في سلك مستقيم</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="l3-2" class="lesson-content">
+            <p>تتولد عند حركة سلك عمودياً على مجال مغناطيسي منتظم.</p>
+            <div class="law-box">
+                $$emf = - B \cdot L \cdot v \cdot \sin(\theta)$$
+            </div>
+            <p>تستخدم <strong>قاعدة اليد اليمنى لفليمنج</strong> لتحديد اتجاه التيار المستحث.</p>
+        </div>
+    </div>
+
+    <div class="lesson-card">
+        <div class="lesson-header" onclick="toggleLesson('l3-3')">
+            <span>3. الحث المتبادل بين ملفين</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="l3-3" class="lesson-content">
+            <p>تأثير كهرومغناطيسي متبادل بين ملفين (ابتدائي وثانوي) يتغير في أحدهما التيار فيتولد في الآخر </p>
+            
+            <div class="law-box">
+                $$emf_2 = -M \frac{\Delta I_1}{\Delta t}$$
+            </div>
+            <p>يقاس معامل الحث المتبادل (M) بوحدة <strong>الهنري (H)</strong>.</p>
+        </div>
+    </div>
+
+    <div class="lesson-card">
+        <div class="lesson-header" onclick="toggleLesson('l3-4')">
+            <span>4. الحث الذاتي لملف</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="l3-4" class="lesson-content">
+            <p>ظاهرة تولد  مستحثة في نفس الملف عند تغير شدة التيار المار فيه.</p>
+            <div class="law-box">
+                $$emf = -L \frac{\Delta I}{\Delta t}$$
+            </div>
+            <div class="note-box">
+                <strong>تذكر:</strong> معامل الحث الذاتي (L) يتوقف على (نفاذية الوسط، عدد اللفات، مساحة المقطع، طول الملف).
+            </div>
+        </div>
+    </div>
+          <div class="lesson-card" style="border-right-color: #ffd700;">
+    <div class="lesson-header" onclick="toggleLesson('l3-5-updated')">
+        <span style="color: #ffd700;"><i class="fas fa-bolt"></i> 5. المولد الكهربي (الدينامو) - القوانين الكاملة</span>
+        <i class="fas fa-chevron-down"></i>
+    </div>
+    <div id="l3-5-updated" class="lesson-content">
+        
+        <div class="device-box" style="background: rgba(255, 255, 255, 0.05); padding: 15px; border-radius: 10px; margin-bottom: 20px;">
+            <h4 style="color: var(--primary)">⚙️ السرعة والزمن والتردد</h4>
+            <div class="law-box">
+                $$\omega = 2\pi f = \frac{v}{r} \quad (rad/sec)$$
+                $$f = \frac{N}{t} = \frac{1}{T} \quad , \quad T = \frac{t}{N} = \frac{1}{f}$$
+                $$\theta = 2\pi f t \quad (\text{} \pi = 180^\circ)$$
+            </div>
+        </div>
+
+        <div class="device-box" style="background: rgba(255, 255, 255, 0.05); padding: 15px; border-radius: 10px; margin-bottom: 20px;">
+            <h4 style="color: var(--primary)">⚡ حساب القوة الدافعة الكهربية (emf)</h4>
+            <div class="law-box">
+                <strong>اللحظية:</strong> $$emf_{inst} = NBA\omega \sin \theta = emf_{max} \sin(2\pi f t)$$
+                <strong>الفعالة:</strong> $$emf_{eff} = \frac{emf_{max}}{\sqrt{2}} = 0.707 \times emf_{max}$$
+                <strong>المتوسطة (خلال ربع أو نصف دورة):</strong> $$emf_{avg} = \frac{2 \cdot emf_{max}}{\pi} = NBA \cdot 4f$$
+                <strong>المتوسطة (خلال 3/4 دورة):</strong> $$emf_{avg} = \frac{2 \cdot emf_{max}}{3\pi} = \frac{4}{3} NBAf$$
+            </div>
+            <div class="note-box">
+                * عند وضع الصفر (الوضع العمودي):  <br>
+                * القيمة العظمى (الوضع الموازي) = °90 <br>
+                * متوسط emf خلال دورة كاملة = <strong>صفر</strong>.
+            </div>
+        </div>
+
+        <div class="device-box" style="background: rgba(255, 255, 255, 0.05); padding: 15px; border-radius: 10px; margin-bottom: 20px;">
+            <h4 style="color: var(--primary)">🔌 حساب شدة التيار (I)</h4>
+            <div class="law-box">
+                $$I_{inst} = I_{max} \sin \theta \quad , \quad I_{max} = \frac{emf_{max}}{R}$$
+                $$I_{eff} = \frac{I_{max}}{\sqrt{2}} = 0.707 \times I_{max}$$
+                $$I_{avg} = \frac{2 I_{max}}{\pi} \text{ }$$
+            </div>
+        </div>
+
+        <div class="device-box" style="background: rgba(255, 255, 255, 0.05); padding: 15px; border-radius: 10px; margin-bottom: 20px;">
+            <h4 style="color: var(--primary)">🔥 الطاقة والقدرة (تستخدم القيم الفعالة فقط)</h4>
+            <div class="law-box">
+                <strong>القدرة:</strong> $$P_w = V_{eff} \cdot I_{eff} = I_{eff}^2 \cdot R = \frac{V_{eff}^2}{R}$$
+                <strong>الطاقة:</strong> $$E = P_w \cdot t = I_{eff}^2 \cdot R \cdot t$$
+            </div>
+        </div>
+
+        <div class="device-box" style="background: rgba(255, 215, 0, 0.1); padding: 15px; border-radius: 10px; border-right: 4px solid var(--accent);">
+            <h4 style="color: var(--accent)">💡 ملاحظات ذهبية من السبورة:</h4>
+            <ul style="list-style: none; padding-right: 10px;">
+                <li>📍 <strong>للوصول لنصف القيمة العظمى:</strong> 《30°=£》 (لأول مرة).</li>
+                <li>📍 <strong>للوصول للقيمة الفعالة:</strong> 《45°=£》.</li>
+                <li>📍 <strong>عدد مرات الوصول للقيمة العظمى:</strong> 《2ft》 (من وضع الصفر).</li>
+                <li>📍 <strong>عدد مرات الوصول للصفر:</strong> 《2ft + 1 》(من وضع الصفر).</li>
+                <li>📍 <strong>علاقة الزمن بالزاوية:</strong> $$t = \frac{\theta}{360f}$$</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+
+    <div class="lesson-card">
+        <div class="lesson-header" onclick="toggleLesson('l3-6')">
+            <span>6. المحول الكهربي</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="l3-6" class="lesson-content">
+            <p>يستخدم لرفع أو خفض الجهد المتردد. فكرة عمله: <strong>الحث المتبادل</strong>.</p>
+        
+            <div class="law-box">
+                $$\frac{V_s}{V_p} = \frac{N_s}{N_p} = \frac{I_p}{I_s}$$
+            </div>
+            <p><strong>كفاءة المحول :</strong></p>
+            <div class="law-box">
+                $$\eta = \frac{P_s}{P_p} \times 100 = \frac{V_s I_s}{V_p I_p} \times 100$$
+            </div>
+        </div>
+    </div>
+
+    <div class="lesson-card">
+        <div class="lesson-header" onclick="toggleLesson('l3-7')">
+            <span>7. المحرك الكهربي (الموتور)</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="l3-7" class="lesson-content">
+            <p>يحول الطاقة الكهربائية إلى طاقة حركية. يعتمد على <strong>عزم الازدواج</strong>.</p>
+            <div class="note-box">
+                <strong>سر استمرار الدوران:</strong> وجود القوة الدافعة الكهربائية العكسية التي تعمل على <strong>انتظام</strong> سرعة دوران الموتور.
+            </div>
+            <p>يتم استخدام عدة ملفات بينها زوايا صغيرة لزيادة كفاءة الموتور وجعل العزم ثابتاً عند النهاية العظمى.</p>
+        </div>
+    </div>
+</div>
 
 
         <button class="btn-glow" style="background:#ef4444; width:100%; margin-top:50px;" onclick="location.reload()">تسجيل خروج</button>
+               
         
+    </div> <div style="padding: 0 5%; max-width: 1200px; margin: auto;">
+        <button class="btn-glow" style="background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); width:100%; margin-top:20px; border:none; margin-bottom: 50px;" 
+                onclick="window.open('https://www.instagram.com/abodag00?igsh=MXQxYmQ5eDlsZGl1cw==', '_blank')">
+            <i class="fab fa-instagram" style="margin-left: 10px;"></i> 𝐴𝐵𝐷𝐸𝐿𝑅𝑈𝐻𝑀𝐴𝑁 𝐸𝐿𝐵𝐿𝐴𝑆𝑌
+        </button>
     </div>
-               <button class="btn-glow" style="background:#1a2244; width:100%; margin-top:50px;" onclick="location.reload()">𝐴𝐵𝐷𝐸𝐿𝑅𝑈𝐻𝑀𝐴𝑁 𝐸𝐿𝐵𝐿𝐴𝑆𝑌</button>
+
     <div id="modal-student" class="modal-overlay">
         <div class="modal-box animate__animated animate__backInUp">
             <i class="fas fa-user-grad" style="font-size: 3rem; color: var(--primary); margin-bottom: 20px;"></i>
